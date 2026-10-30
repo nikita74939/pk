@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Geometri Sudut dan Bidang Datar</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="wrap">
+<h1>Geometri Sudut dan Bidang Datar</h1>
+<p class="sub">Ringkasan rumus: sudut, segitiga, garis istimewa, lingkaran, dan segiempat.</p>
+<nav><a href="#sudut">Sudut</a><a href="#segitiga">Segitiga</a><a href="#istimewa">Garis istimewa</a><a href="#lingkaran">Lingkaran</a><a href="#segiempat">Segiempat</a></nav>
+
+<h2 id="sudut">Sudut</h2>
+<div class="g">
+<div class="c"><h3>Sudut yang saling berpenyiku</h3><p>Dua atau lebih sudut yang jumlahnya 90°.</p><svg class="fig" viewBox="0 0 300 115" role="img" aria-label="Sudut saling berpenyiku"><path d="M20 100V12M20 100H130M20 100L125 38M20 90H30V100M170 100V12M170 100H285M170 100L262 50"/><path class="r" d="M170 100L212 16"/><path class="b" d="M20 68A32 32 0 0 1 47 84M52 100A32 32 0 0 0 47 84M170 60A40 40 0 0 1 188 64M188 64A40 40 0 0 1 205 81M205 81A40 40 0 0 1 210 100"/><text x="14" y="10">A</text><text x="128" y="36">B</text><text x="134" y="104">C</text><text x="8" y="112">O</text><text x="27" y="76">r</text><text x="60" y="92">s</text><text x="164" y="10">A</text><text x="208" y="12">D</text><text x="266" y="50">B</text><text x="288" y="104">C</text><text x="160" y="112">O</text><text x="181" y="50">z</text><text x="206" y="62">y</text><text x="222" y="90">x</text></svg>
+<div class="fm">∠AOB + ∠BOC = 90°</div><div class="fm">r + s = 90°</div><div class="fm">x + y + z = 90°</div></div>
+<div class="c"><h3>Sudut yang saling berpelurus</h3><p>Dua atau lebih sudut pada garis lurus yang jumlahnya 180°.</p><svg class="fig" viewBox="0 0 300 100" role="img" aria-label="Sudut saling berpelurus"><path d="M5 85H145M75 85L60 12M155 85H295M225 85L200 14M225 85L242 14"/><path class="b" d="M47 85A28 28 0 0 1 103 85M197 85A28 28 0 0 1 253 85"/><text x="55" y="72">t</text><text x="88" y="72">u</text><text x="57" y="10">B</text><text x="72" y="98">O</text><text x="205" y="76">z</text><text x="221" y="66">y</text><text x="245" y="76">x</text><text x="222" y="98">O</text></svg>
+<div class="fm">t + u = 180°</div><div class="fm">x + y + z = 180°</div></div>
+<div class="c"><h3>Dua garis sejajar dipotong garis lain</h3><svg class="fig" viewBox="0 0 300 190" role="img" aria-label="Sudut pada dua garis sejajar"><path d="M10 60H290M10 140H290M110 180L190 20"/><text x="158" y="52">s</text><text x="184" y="52">r</text><text x="150" y="74">p</text><text x="176" y="74">q</text><text x="120" y="132">d</text><text x="146" y="132">c</text><text x="108" y="154">a</text><text x="134" y="154">b</text></svg>
+<p><b>Sudut sehadap</b></p><div class="fm">d° = s° dan r° = c°<br>a° = p° dan b° = q°</div>
+<p><b>Sudut berseberangan dalam</b></p><div class="fm">d° = q° dan p° = c°</div>
+<p><b>Sudut berseberangan luar</b></p><div class="fm">a° = r° dan b° = s°</div>
+<p><b>Sudut sepihak dalam</b> (jumlahnya 180°)</p><div class="fm">d° + p° = 180° dan c° + q° = 180°</div></div>
+</div>
+
+<h2 id="segitiga">Segitiga</h2>
+<div class="g">
+<div class="c"><h3>Sudut dalam</h3><svg class="fig" viewBox="0 0 200 110" role="img" aria-label="Sudut dalam segitiga"><polygon fill="#f2c23066" points="20,95 175,95 135,15"/><text x="128" y="46">a°</text><text x="30" y="90">b°</text><text x="148" y="90">c°</text></svg><div class="fm">a° + b° + c° = 180°</div>
+<h3 style="margin-top:12px">Sudut luar</h3><p>Sudut luar sama dengan jumlah dua sudut dalam yang tidak bersisian dengannya.</p><svg class="fig" viewBox="0 0 260 110" role="img" aria-label="Sudut luar segitiga"><path d="M5 95H250M30 95L95 20L190 95"/><path class="r" d="M8 95A22 22 0 0 1 44 78M212 95A22 22 0 0 0 173 81"/><path class="b" d="M52 95A22 22 0 0 0 44 78M168 95A22 22 0 0 1 173 81M83 34A18 18 0 0 0 109 31"/><text x="12" y="82">α</text><text x="57" y="91">a</text><text x="212" y="82">β</text><text x="156" y="90">b</text><text x="92" y="52">c</text><text x="26" y="108">A</text><text x="186" y="108">B</text><text x="91" y="14">C</text></svg>
+<div class="fm">α = b + c<br>β = a + c</div></div>
+<div class="c"><h3>Luas segitiga</h3>
+<p>① Alas dan tinggi</p><div class="fm">L = <span class="f"><i>alas × tinggi</i><i>2</i></span></div>
+<p>② Dua sisi dan sudut apit</p><div class="fm">L = <span class="f"><i>bc sin α</i><i>2</i></span> = <span class="f"><i>ac sin β</i><i>2</i></span> = <span class="f"><i>ab sin γ</i><i>2</i></span></div>
+<p>③ Rumus Heron</p><div class="fm">L = √(s(s−a)(s−b)(s−c))<br>s = <span class="f"><i>a + b + c</i><i>2</i></span></div>
+<p>④ Satu sisi dan dua sudut</p><div class="fm">L = <span class="f"><i>a² sin β sin γ</i><i>2 sin α</i></span> = <span class="f"><i>b² sin α sin γ</i><i>2 sin β</i></span> = <span class="f"><i>c² sin α sin β</i><i>2 sin γ</i></span></div></div>
+<div class="c"><h3>Kesebangunan pada dua segitiga</h3><p>Segitiga ABC siku-siku di A, dengan garis tinggi AD ke sisi miring BC.</p><svg class="fig" viewBox="0 0 200 110" role="img" aria-label="Kesebangunan pada dua segitiga"><path d="M30 95V15L170 95ZM30 85H40V95M70.5 38.2L67 44.3L61 40.8"/><path class="r" d="M30 95L64.5 34.7"/><text x="20" y="108">A</text><text x="172" y="108">B</text><text x="22" y="12">C</text><text x="68" y="30">D</text></svg>
+<div class="fm">AD² = BD × CD</div><div class="fm">AB² = BD × BC</div><div class="fm">AC² = CD × CB</div></div>
+<div class="c"><h3>Perbandingan garis sejajar</h3><svg class="fig" viewBox="0 0 170 205" role="img" aria-label="Perbandingan garis sejajar"><path d="M15 85H150L125 10H40ZM15 185H150L125 110H40Z"/><path class="d" d="M15 185L125 110M150 185L40 110"/><path class="r" d="M25 55H140M30 139H135"/><text x="32" y="8">D</text><text x="128" y="8">C</text><text x="6" y="97">A</text><text x="152" y="97">B</text><text x="8" y="58">E</text><text x="144" y="58">F</text><text x="32" y="108">D</text><text x="128" y="108">C</text><text x="6" y="197">A</text><text x="152" y="197">B</text><text x="12" y="142">E</text><text x="138" y="142">F</text></svg>
+<div class="fm"><span class="f"><i>a</i><i>a + b</i></span> = <span class="f"><i>c</i><i>c + d</i></span> = <span class="f"><i>e</i><i>f</i></span></div>
+<div class="fm"><span class="f"><i>a</i><i>b</i></span> = <span class="f"><i>c</i><i>d</i></span></div>
+<p>Garis sejajar alas pada trapesium (E pada AD, F pada BC):</p>
+<div class="fm">EF = <span class="f"><i>AE × CD + ED × AB</i><i>AE + ED</i></span></div>
+<p>Garis melalui titik tengah diagonal AC dan BD:</p>
+<div class="fm">EF = <span class="f"><i>AB − CD</i><i>2</i></span></div>
+<p>Dua tiang tegak (tinggi a dan b) dengan tali silang, x tinggi titik potong:</p><svg class="fig" viewBox="0 0 220 120" role="img" aria-label="Dua tiang dan tali silang"><path d="M10 105H210M30 105V25M190 105V55M30 25L190 105M190 55L30 105"/><path class="r" d="M128.5 74V105"/><text x="16" y="70">a</text><text x="198" y="86">b</text><text x="134" y="92">x</text></svg>
+<div class="fm"><span class="f"><i>1</i><i>x</i></span> = <span class="f"><i>1</i><i>a</i></span> + <span class="f"><i>1</i><i>b</i></span></div></div>
+</div>
+
+<h2 id="istimewa">Garis istimewa pada segitiga</h2>
+<div class="g">
+<div class="c"><h3>Garis tinggi</h3><p>Garis dari titik sudut yang ditarik tegak lurus ke sisi di hadapannya.</p><svg class="fig" viewBox="0 0 200 130" role="img" aria-label="Garis tinggi segitiga"><path d="M70 10L15 110H185ZM70 102H78V110"/><path class="r" d="M70 10V110M15 110L88 26M185 110L54.5 38"/><text x="76" y="12">A</text><text x="4" y="120">B</text><text x="188" y="120">C</text><text x="92" y="24">D</text><text x="40" y="38">E</text><text x="66" y="126">F</text><text x="76" y="52">O</text></svg>
+<div class="fm">AF : CE : BD = <span class="f"><i>1</i><i>BC</i></span> : <span class="f"><i>1</i><i>AB</i></span> : <span class="f"><i>1</i><i>AC</i></span></div></div>
+<div class="c"><h3>Garis berat</h3><p>Garis dari titik sudut ke sisi di hadapannya yang membagi sisi menjadi dua bagian sama panjang.</p><svg class="fig" viewBox="0 0 200 130" role="img" aria-label="Garis berat segitiga"><path d="M70 10L15 110H185Z"/><path class="r" d="M70 10L100 110M15 110L127.5 60M185 110L42.5 60"/><circle class="p" cx="100" cy="110" r="2.5"/><circle class="p" cx="127.5" cy="60" r="2.5"/><circle class="p" cx="42.5" cy="60" r="2.5"/><text x="76" y="12">A</text><text x="4" y="120">B</text><text x="188" y="120">C</text><text x="98" y="126">D</text><text x="134" y="58">E</text><text x="24" y="58">F</text><text x="95" y="72">O</text></svg>
+<div class="fm"><span class="f"><i>AO</i><i>OD</i></span> : <span class="f"><i>BO</i><i>OE</i></span> : <span class="f"><i>CO</i><i>OF</i></span> = <span class="f"><i>2</i><i>1</i></span></div>
+<div class="fm">AD² = <span class="f"><i>1</i><i>2</i></span>AB² + <span class="f"><i>1</i><i>2</i></span>AC² − <span class="f"><i>1</i><i>4</i></span>BC²</div></div>
+<div class="c"><h3>Garis bagi</h3><p>Garis dari titik sudut ke sisi di hadapannya yang membagi sudut menjadi dua sama besar. Sisi a terbagi menjadi m dan n.</p><svg class="fig" viewBox="0 0 200 148" role="img" aria-label="Garis bagi segitiga"><path d="M80 10L15 110H190ZM15 132H190M15 128V136M190 128V136"/><path class="r" d="M80 10L92.9 110"/><text x="86" y="12">A</text><text x="3" y="120">B</text><text x="192" y="120">C</text><text x="96" y="122">D</text><text x="48" y="106">m</text><text x="140" y="106">n</text><text x="100" y="146">a</text><text x="38" y="56">c</text><text x="146" y="56">b</text><text x="88" y="64">d</text></svg>
+<div class="fm"><span class="f"><i>m</i><i>n</i></span> = <span class="f"><i>c</i><i>b</i></span></div>
+<div class="fm">d² = (c × b) − (m × n)</div></div>
+</div>
+
+<h2 id="lingkaran">Lingkaran</h2>
+<div class="g">
+<div class="c"><h3>Sudut pusat dan sudut keliling</h3><svg class="fig" viewBox="0 0 220 172" role="img" aria-label="Sudut pusat dan sudut keliling"><circle cx="110" cy="90" r="70"/><path class="r" d="M110 90L44 66.6M110 90L150 32.5"/><path class="d" d="M65 143.6L44 66.6M65 143.6L150 32.5M130 157L44 66.6M130 157L150 32.5"/><circle class="p" cx="110" cy="90" r="2.5"/><text x="30" y="66">A</text><text x="154" y="30">B</text><text x="52" y="152">C</text><text x="130" y="168">D</text><text x="114" y="104">P</text></svg><p>∠APB adalah sudut pusat. ∠ACB dan ∠ADB adalah sudut keliling.</p>
+<p><b>a.</b> Sudut pusat dan sudut keliling yang menghadap busur yang sama: sudut pusat besarnya <b style="color:#b3261e">dua kali</b> sudut keliling.</p>
+<div class="fm">∠APB = 2 × ∠ACB = 2 × ∠ADB</div>
+<p><b>b.</b> Sudut keliling yang menghadap busur yang sama besarnya sama.</p>
+<div class="fm">∠ACB = ∠ADB</div>
+<p><b>c.</b> Sudut keliling yang menghadap diameter besarnya 90°.</p></div>
+<div class="c"><h3>Sudut dua tali busur</h3><p>Dua tali busur berpotongan di luar lingkaran:</p><svg class="fig" viewBox="0 0 190 150" role="img" aria-label="Sudut dua tali busur di luar lingkaran"><circle cx="110" cy="85" r="60"/><path d="M5 85L151 41.2M5 85L151 128.8"/><path class="d" d="M110 85L151 41.2M110 85L151 128.8M110 85L51.7 71M110 85L51.7 99"/><path class="b" d="M30 77A26 26 0 0 1 30 93"/><circle class="p" cx="110" cy="85" r="2.5"/><text x="2" y="78">R</text><text x="36" y="66">S</text><text x="36" y="110">Q</text><text x="150" y="34">T</text><text x="152" y="142">P</text><text x="113" y="100">O</text></svg>
+<div class="fm">∠TSP = <span class="f"><i>1</i><i>2</i></span> × ∠TOP &nbsp; ∠SPQ = <span class="f"><i>1</i><i>2</i></span> × ∠SOQ<br>∠TRP = ∠TSP − ∠SPQ<br>∠TRP = <span class="f"><i>1</i><i>2</i></span> × ∠TOP − <span class="f"><i>1</i><i>2</i></span> × ∠SOQ</div>
+<div class="fm"><b>∠TRP = <span class="f"><i>1</i><i>2</i></span> × (∠TOP − ∠SOQ)</b></div>
+<p>Dua tali busur berpotongan di dalam lingkaran:</p><svg class="fig" viewBox="0 0 200 175" role="img" aria-label="Sudut dua tali busur di dalam lingkaran"><circle cx="100" cy="90" r="70"/><path d="M59.8 32.7L124 155.8M140.2 32.7L59.8 147.3"/><path class="d" d="M100 90L59.8 147.3M100 90L59.8 32.7M100 90L124 155.8M100 90L140.2 32.7"/><circle class="p" cx="100" cy="90" r="2.5"/><text x="46" y="30">S</text><text x="144" y="30">R</text><text x="44" y="156">P</text><text x="126" y="170">Q</text><text x="80" y="112">T</text><text x="106" y="84">O</text></svg>
+<div class="fm">∠PTS = <span class="f"><i>1</i><i>2</i></span>(∠POS + ∠QOS)</div></div>
+<div class="c"><h3>Luas dan keliling lingkaran</h3><svg class="fig" viewBox="0 0 260 110" role="img" aria-label="Luas dan keliling lingkaran"><circle fill="#f2c23033" cx="60" cy="55" r="45"/><circle fill="#f2c23033" cx="190" cy="55" r="45"/><path class="r" d="M60 55H105M145 55H235"/><circle class="p" cx="60" cy="55" r="2.5"/><circle class="p" cx="190" cy="55" r="2.5"/><text x="80" y="48">r</text><text x="190" y="48">d</text></svg>
+<div class="fm">K = 2πr &nbsp;&nbsp; L = πr²</div>
+<div class="fm">K = πd &nbsp;&nbsp;&nbsp; L = <span class="f"><i>1</i><i>4</i></span>πd²</div>
+<p>Panjang busur dan luas juring dengan sudut pusat α:</p>
+<div class="fm">busur = <span class="f"><i>α</i><i>360°</i></span> × 2πr &nbsp; juring = <span class="f"><i>α</i><i>360°</i></span> × πr²</div></div>
+</div>
+
+<h2 id="segiempat">Segiempat</h2>
+<div class="w"><table>
+<thead><tr><th>No.</th><th>Nama bangun datar</th><th>Gambar</th><th>Rumus luas</th><th>Rumus keliling</th></tr></thead>
+<tbody>
+<tr><td>1.</td><td>Persegi</td><td><svg viewBox="0 0 100 56" role="img" aria-label="Persegi"><rect x="32" y="6" width="44" height="44"/></svg></td><td><i>s</i>²</td><td>4<i>s</i></td></tr>
+<tr><td>2.</td><td>Persegipanjang</td><td><svg viewBox="0 0 100 56" role="img" aria-label="Persegipanjang"><rect x="14" y="10" width="72" height="36"/></svg></td><td><i>p</i> · <i>l</i></td><td>2(<i>p</i> + <i>l</i>)</td></tr>
+<tr><td>3.</td><td>Jajargenjang</td><td><svg viewBox="0 0 100 56" role="img" aria-label="Jajargenjang"><polygon points="30,10 90,10 70,46 10,46"/><line class="d" x1="30" y1="10" x2="30" y2="46"/></svg></td><td><i>a</i> · <i>t</i></td><td>2(<i>a</i> + <i>m</i>)</td></tr>
+<tr><td>4.</td><td>Belah ketupat</td><td><svg viewBox="0 0 100 56" role="img" aria-label="Belah ketupat"><polygon points="50,4 90,28 50,52 10,28"/><path class="d" d="M10 28H90M50 4V52"/></svg></td><td><span class="f"><i>1</i><i>2</i></span> · <i>d</i><sub>1</sub> · <i>d</i><sub>2</sub></td><td>4<i>m</i></td></tr>
+<tr><td>5.</td><td>Layang-layang</td><td><svg viewBox="0 0 100 56" role="img" aria-label="Layang-layang"><polygon points="12,28 40,6 90,28 40,50"/><path class="d" d="M12 28H90M40 6V50"/></svg></td><td><span class="f"><i>1</i><i>2</i></span> · <i>d</i><sub>1</sub> · <i>d</i><sub>2</sub></td><td>2(<i>m</i><sub>1</sub> + <i>m</i><sub>2</sub>)</td></tr>
+<tr><td>6.</td><td>Trapesium</td><td><svg viewBox="0 0 100 56" role="img" aria-label="Trapesium"><polygon points="34,8 66,8 90,48 10,48"/><line class="d" x1="34" y1="8" x2="34" y2="48"/></svg></td><td><span class="f"><i>1</i><i>2</i></span>(<i>a</i> + <i>b</i>) · <i>t</i></td><td>2<i>m</i> + <i>a</i> + <i>b</i></td></tr>
+</tbody></table></div>
+</main>
+</body>
+</html>
