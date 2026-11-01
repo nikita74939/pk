@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Identitas Trigonometri Lengkap</title>
+<script>
+  MathJax = {
+    tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #222;
+    line-height: 1.6;
+    margin: 0;
+    padding: 24px;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #222;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+  }
+  .sub {
+    color: #666;
+    font-size: .9rem;
+    margin-bottom: 24px;
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin: 32px 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ddd;
+  }
+  h3 {
+    font-size: .95rem;
+    margin: 16px 0 8px;
+  }
+  p { margin: 6px 0; }
+  .premis {
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-size: .9rem;
+    overflow-x: auto;
+  }
+  ul, ol { margin: 8px 0; padding-left: 24px; }
+  li { margin-bottom: 4px; }
+  .kunci, .penjelasan {
+    background: #fbfbfb;
+    border: 1px solid #ddd;
+    border-left: 4px solid #999;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-size: .9rem;
+  }
+  .penjelasan b { color: #000; }
+  .penjelasan .lbl {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  .kunci .lbl {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  .contoh {
+    border: 1px solid #ddd;
+    border-left: 4px solid #555;
+    padding: 14px 18px;
+    margin: 16px 0;
+  }
+  .contoh h3 {
+    font-size: .95rem;
+    margin: 0 0 10px;
+  }
+  .opsi { list-style: none; padding-left: 0; }
+  .opsi li {
+    border: 1px solid #eee;
+    padding: 6px 10px;
+    margin-bottom: 4px;
+    border-radius: 3px;
+    font-size: .9rem;
+  }
+  .contoh.revealed .opsi li.benar {
+    background: #eef7ee;
+    border-color: #7bbf7b !important;
+    font-weight: bold;
+  }
+  .pembahasan {
+    background: #f7f7f7;
+    padding: 12px 16px;
+    margin-top: 12px;
+    font-size: .9rem;
+    border-radius: 4px;
+    display: none;
+  }
+  .contoh.revealed .pembahasan {
+    display: block;
+  }
+  .toggle {
+    margin-top: 10px;
+    padding: 7px 14px;
+    font-size: .85rem;
+    font-family: inherit;
+    background: #fff;
+    border: 1px solid #888;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .toggle:hover {
+    background: #f0f0f0;
+  }
+  .final {
+    display: inline-block;
+    margin-top: 6px;
+    font-weight: bold;
+  }
+  .rumus {
+    text-align: center;
+    font-family: "Cambria Math", Georgia, serif;
+    font-size: 1.05rem;
+    background: #fbfbfb;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin: 10px 0;
+    overflow-x: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .88rem;
+    margin: 12px 0;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 7px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: #f2f2f2; }
+  footer {
+    text-align: center;
+    color: #999;
+    font-size: .8rem;
+    margin-top: 32px;
+    border-top: 1px solid #eee;
+    padding-top: 14px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Identitas Trigonometri Lengkap</h1>
+
+  <h2>1. Pengertian &amp; Kegunaan</h2>
+  <div class="premis">
+    <b>Identitas trigonometri</b> adalah persamaan yang memuat fungsi trigonometri
+    dan <b>berlaku untuk setiap nilai sudut</b> yang terdefinisi. Berbeda dengan
+    persamaan trigonometri yang hanya benar pada sudut-sudut tertentu, identitas
+    selalu benar.
+  </div>
+  <div class="premis">
+    Identitas digunakan untuk:
+  </div>
+  <ul>
+    <li><b>Menyederhanakan</b> bentuk trigonometri yang panjang.</li>
+    <li><b>Membuktikan</b> dua bentuk trigonometri sama.</li>
+    <li><b>Menghitung</b> nilai fungsi trigonometri sudut tidak istimewa.</li>
+    <li><b>Menyelesaikan</b> persamaan trigonometri dan limit fungsi trigonometri.</li>
+  </ul>
+  <div class="rumus">
+    \[
+      \sin^2 x + \cos^2 x = 1
+    \]
+  </div>
+  <div class="kunci">
+    <span class="lbl">Strategi umum</span><br>
+    Ubah semua fungsi menjadi <b>sinus dan kosinus</b>, lalu sederhanakan. Jika
+    menemui bentuk kuadrat, manfaatkan identitas Pythagoras.
+  </div>
+
+  <h2>2. Identitas Dasar</h2>
+
+  <h3>2.1 Identitas Resiprokal (Kebalikan)</h3>
+  <div class="rumus">
+    \[
+      \csc x = \frac{1}{\sin x}, \qquad
+      \sec x = \frac{1}{\cos x}, \qquad
+      \cot x = \frac{1}{\tan x}
+    \]
+  </div>
+
+  <h3>2.2 Identitas Perbandingan</h3>
+  <div class="rumus">
+    \[
+      \tan x = \frac{\sin x}{\cos x}, \qquad
+      \cot x = \frac{\cos x}{\sin x}
+    \]
+  </div>
+
+  <h3>2.3 Identitas Pythagoras</h3>
+  <div class="rumus">
+    \[
+      \sin^2 x + \cos^2 x = 1
+    \]
+    \[
+      1 + \tan^2 x = \sec^2 x
+    \]
+    \[
+      1 + \cot^2 x = \csc^2 x
+    \]
+  </div>
+  <div class="penjelasan">
+    <span class="lbl">Asal rumus kedua dan ketiga</span><br>
+    Bagi \(\sin^2 x + \cos^2 x = 1\) dengan \(\cos^2 x\):
+    \[
+      \frac{\sin^2 x}{\cos^2 x} + 1 = \frac{1}{\cos^2 x}
+      \;\Rightarrow\; \tan^2 x + 1 = \sec^2 x
+    \]
+    Bagi dengan \(\sin^2 x\) menghasilkan \(1 + \cot^2 x = \csc^2 x\).
+  </div>
+
+
+
+  <h2>3. Identitas Sudut Negatif &amp; Relasi Sudut</h2>
+  <div class="rumus">
+    \[
+      \sin(-x) = -\sin x, \qquad
+      \cos(-x) = \cos x, \qquad
+      \tan(-x) = -\tan x
+    \]
+  </div>
+  <div class="premis">
+    Relasi sudut dalam berbagai kuadran:
+  </div>
+  <table>
+    <tr>
+      <th>Sudut</th>
+      <th>\(\sin\)</th>
+      <th>\(\cos\)</th>
+      <th>\(\tan\)</th>
+    </tr>
+    <tr>
+      <td>\(90^\circ - x\)</td>
+      <td>\(\cos x\)</td>
+      <td>\(\sin x\)</td>
+      <td>\(\cot x\)</td>
+    </tr>
+    <tr>
+      <td>\(90^\circ + x\)</td>
+      <td>\(\cos x\)</td>
+      <td>\(-\sin x\)</td>
+      <td>\(-\cot x\)</td>
+    </tr>
+    <tr>
+      <td>\(180^\circ - x\)</td>
+      <td>\(\sin x\)</td>
+      <td>\(-\cos x\)</td>
+      <td>\(-\tan x\)</td>
+    </tr>
+    <tr>
+      <td>\(180^\circ + x\)</td>
+      <td>\(-\sin x\)</td>
+      <td>\(-\cos x\)</td>
+      <td>\(\tan x\)</td>
+    </tr>
+    <tr>
+      <td>\(270^\circ - x\)</td>
+      <td>\(-\cos x\)</td>
+      <td>\(-\sin x\)</td>
+      <td>\(\cot x\)</td>
+    </tr>
+    <tr>
+      <td>\(270^\circ + x\)</td>
+      <td>\(-\cos x\)</td>
+      <td>\(\sin x\)</td>
+      <td>\(-\cot x\)</td>
+    </tr>
+    <tr>
+      <td>\(360^\circ - x\)</td>
+      <td>\(-\sin x\)</td>
+      <td>\(\cos x\)</td>
+      <td>\(-\tan x\)</td>
+    </tr>
+  </table>
+  <div class="penjelasan">
+    <span class="lbl">Pola tanda</span><br>
+    Tentukan tanda berdasarkan <b>kuadran sudut asal</b>, lalu gunakan sudut acuan.
+    Ingat <b>ASTC</b>: kuadran I semua positif, kuadran II hanya sinus, kuadran III
+    hanya tangen, kuadran IV hanya kosinus.
+  </div>
+
+
+  <h2>4. Identitas Jumlah &amp; Selisih Dua Sudut</h2>
+  <div class="rumus">
+    \[
+      \sin(A + B) = \sin A\cos B + \cos A\sin B
+    \]
+    \[
+      \sin(A - B) = \sin A\cos B - \cos A\sin B
+    \]
+    \[
+      \cos(A + B) = \cos A\cos B - \sin A\sin B
+    \]
+    \[
+      \cos(A - B) = \cos A\cos B + \sin A\sin B
+    \]
+    \[
+      \tan(A + B) = \frac{\tan A + \tan B}{1 - \tan A\tan B}
+    \]
+    \[
+      \tan(A - B) = \frac{\tan A - \tan B}{1 + \tan A\tan B}
+    \]
+  </div>
+  <div class="kunci">
+    <span class="lbl">Ingat pola tanda</span><br>
+    Untuk <b>sinus</b>: tanda dalam kurung <b>sama</b> dengan tanda di ruas kanan.<br>
+    Untuk <b>kosinus</b>: tanda dalam kurung <b>berlawanan</b> dengan tanda di ruas kanan.<br>
+    Untuk <b>tangen</b>: penyebut memakai tanda yang berlawanan dengan pembilang.
+  </div>
+
+
+
+  <h2>5. Identitas Sudut Rangkap</h2>
+  <div class="rumus">
+    \[
+      \sin 2A = 2\sin A\cos A
+    \]
+    \[
+      \cos 2A = \cos^2 A - \sin^2 A
+      = 2\cos^2 A - 1
+      = 1 - 2\sin^2 A
+    \]
+    \[
+      \tan 2A = \frac{2\tan A}{1 - \tan^2 A}
+    \]
+  </div>
+  <div class="penjelasan">
+    <span class="lbl">Asal rumus</span><br>
+    Substitusikan \(B = A\) pada rumus jumlah dua sudut:
+    \[
+      \sin(A + A) = \sin A\cos A + \cos A\sin A = 2\sin A\cos A
+    \]
+    \[
+      \cos(A + A) = \cos A\cos A - \sin A\sin A = \cos^2 A - \sin^2 A
+    \]
+    Bentuk lain \(\cos 2A\) diperoleh dengan mengganti \(\cos^2 A = 1 - \sin^2 A\)
+    atau \(\sin^2 A = 1 - \cos^2 A\).
+  </div>
+  <div class="kunci">
+    <span class="lbl">Pilih bentuk yang sesuai</span><br>
+    Jika diketahui \(\sin A\), gunakan \(\cos 2A = 1 - 2\sin^2 A\).<br>
+    Jika diketahui \(\cos A\), gunakan \(\cos 2A = 2\cos^2 A - 1\).
+  </div>
+
+
+
+
+  <h2>6. Identitas Sudut Setengah</h2>
+  <div class="rumus">
+    \[
+      \sin\frac{A}{2} = \pm\sqrt{\frac{1 - \cos A}{2}}
+    \]
+    \[
+      \cos\frac{A}{2} = \pm\sqrt{\frac{1 + \cos A}{2}}
+    \]
+    \[
+      \tan\frac{A}{2} = \frac{\sin A}{1 + \cos A} = \frac{1 - \cos A}{\sin A}
+    \]
+  </div>
+  <div class="penjelasan">
+    <span class="lbl">Menentukan tanda</span><br>
+    Tanda \(\pm\) dipilih berdasarkan <b>kuadran sudut \(\tfrac{A}{2}\)</b>, bukan
+    kuadran \(A\). Jika \(A\) diketahui berada pada interval tertentu, tentukan
+    lebih dulu interval \(\tfrac{A}{2}\).
+  </div>
+
+
+  <h2>7. Perkalian ke Jumlah/Selisih &amp; Sebaliknya</h2>
+
+  <h3>7.1 Perkalian ke Jumlah/Selisih</h3>
+  <div class="rumus">
+    \[
+      2\sin A\cos B = \sin(A + B) + \sin(A - B)
+    \]
+    \[
+      2\cos A\sin B = \sin(A + B) - \sin(A - B)
+    \]
+    \[
+      2\cos A\cos B = \cos(A + B) + \cos(A - B)
+    \]
+    \[
+      2\sin A\sin B = \cos(A - B) - \cos(A + B)
+    \]
+  </div>
+  <div class="kunci">
+    <span class="lbl">Perhatikan tanda terakhir</span><br>
+    Untuk \(2\sin A\sin B\), hasilnya adalah \(\cos(A-B) - \cos(A+B)\),
+    yaitu <b>selisih</b> dengan \(\cos(A+B)\) di belakang. Ini berbeda dari tiga
+    rumus lainnya yang memakai tanda tambah atau selisih langsung.
+  </div>
+
+  <h3>7.2 Jumlah/Selisih ke Perkalian</h3>
+  <div class="rumus">
+    \[
+      \sin A + \sin B = 2\sin\frac{A+B}{2}\cos\frac{A-B}{2}
+    \]
+    \[
+      \sin A - \sin B = 2\cos\frac{A+B}{2}\sin\frac{A-B}{2}
+    \]
+    \[
+      \cos A + \cos B = 2\cos\frac{A+B}{2}\cos\frac{A-B}{2}
+    \]
+    \[
+      \cos A - \cos B = -2\sin\frac{A+B}{2}\sin\frac{A-B}{2}
+    \]
+  </div>
+
+
+
+  <h2>8. Identitas pada Segitiga &amp; Identitas Bersyarat</h2>
+  <div class="premis">
+    Jika \(A, B, C\) adalah sudut-sudut segitiga, maka \(A + B + C = 180^\circ\).
+    Akibatnya:
+  </div>
+  <div class="rumus">
+    \[
+      \sin(A + B) = \sin C, \qquad
+      \cos(A + B) = -\cos C, \qquad
+      \tan(A + B) = -\tan C
+    \]
+    \[
+      \sin\frac{A}{2} = \cos\frac{B + C}{2}, \qquad
+      \cos\frac{A}{2} = \sin\frac{B + C}{2}
+    \]
+  </div>
+  <div class="premis">
+    <b>Identitas bersyarat</b> berlaku hanya jika syarat sudutnya dipenuhi. Contoh:
+  </div>
+  <div class="rumus">
+    \[
+      A + B = 45^\circ \;\Rightarrow\; (1 + \tan A)(1 + \tan B) = 2
+    \]
+    \[
+      A + B = 90^\circ \;\Rightarrow\; \sin^2 A + \sin^2 B = 1
+    \]
+  </div>
+
+
+
+  <h2>9. Ringkasan Rumus</h2>
+  <table>
+    <tr><th>Kelompok</th><th>Rumus Penting</th></tr>
+    <tr>
+      <td>Dasar</td>
+      <td>\(\sin^2 x + \cos^2 x = 1\); \(\tan x = \dfrac{\sin x}{\cos x}\)</td>
+    </tr>
+    <tr>
+      <td>Pythagoras lanjutan</td>
+      <td>\(1 + \tan^2 x = \sec^2 x\); \(1 + \cot^2 x = \csc^2 x\)</td>
+    </tr>
+    <tr>
+      <td>Jumlah/selisih</td>
+      <td>\(\sin(A \pm B)\), \(\cos(A \pm B)\), \(\tan(A \pm B)\)</td>
+    </tr>
+    <tr>
+      <td>Sudut rangkap</td>
+      <td>\(\sin 2A = 2\sin A\cos A\); \(\cos 2A = 1 - 2\sin^2 A = 2\cos^2 A - 1\)</td>
+    </tr>
+    <tr>
+      <td>Sudut setengah</td>
+      <td>\(\sin\frac{A}{2} = \pm\sqrt{\frac{1-\cos A}{2}}\); \(\cos\frac{A}{2} = \pm\sqrt{\frac{1+\cos A}{2}}\)</td>
+    </tr>
+    <tr>
+      <td>Perkalian ke jumlah</td>
+      <td>\(2\sin A\cos B = \sin(A+B) + \sin(A-B)\)</td>
+    </tr>
+    <tr>
+      <td>Jumlah ke perkalian</td>
+      <td>\(\sin A + \sin B = 2\sin\frac{A+B}{2}\cos\frac{A-B}{2}\)</td>
+    </tr>
+  </table>
+
+  <h2>10. Tips &amp; Kesalahan Umum</h2>
+  <div class="penjelasan">
+    <span class="lbl">Tips mengerjakan soal identitas</span>
+    <ol>
+      <li><b>Ubah ke sin dan cos</b> terlebih dahulu jika bentuknya memuat tangen, sekon, atau kosekan.</li>
+      <li><b>Kerjakan ruas yang lebih rumit</b> sampai bentuknya sama dengan ruas lain.</li>
+      <li>Cari <b>bentuk kuadrat</b> lalu gunakan \(\sin^2 x + \cos^2 x = 1\).</li>
+      <li>Jika muncul \(2x\), pikirkan <b>sudut rangkap</b>; jika muncul \(\tfrac{x}{2}\), pikirkan <b>sudut setengah</b>.</li>
+      <li>Jika muncul jumlah/selisih sinus atau kosinus, gunakan <b>rumus jumlah ke perkalian</b>.</li>
+      <li>Untuk soal bergantung sudut lain, gunakan <b>relasi sudut</b> (mis. \(\sin(180^\circ - x) = \sin x\)).</li>
+    </ol>
+  </div>
+  <div class="kunci">
+    <span class="lbl">Kesalahan yang sering terjadi</span>
+    <ul>
+      <li>Menulis \(\sin(A + B) = \sin A + \sin B\). Ini <b>salah</b>.</li>
+      <li>Menulis \(\cos 2A = 2\cos A\) atau \(\sin 2A = 2\sin A\). Ini <b>salah</b>.</li>
+      <li>Tertukar antara \(\cos(A - B)\) dan \(\cos(A + B)\) pada rumus jumlah kosinus.</li>
+      <li>Lupa tanda negatif pada \(\cos A - \cos B\) dan pada \(2\sin A\sin B\).</li>
+      <li>Salah memilih tanda \(\pm\) pada sudut setengah karena tidak memeriksa kuadran \(\tfrac{A}{2}\).</li>
+      <li>Membagi dengan \(\sin x\) atau \(\cos x\) tanpa memeriksa kemungkinan nilainya \(0\).</li>
+    </ul>
+  </div>
+  <div class="penjelasan">
+    <span class="lbl">Cek cepat hasil</span><br>
+    Uji dengan sudut sederhana, misalnya \(x = 30^\circ\) atau \(A = B = 45^\circ\).
+    Jika kedua ruas identitas memberi nilai yang sama, hasil penyederhanaan
+    kemungkinan besar benar.
+  </div>
+
+</div>
+</body>
+</html>

@@ -72,6 +72,25 @@ a { color: #1a4f8a; }
   margin: 4px 0 0;
 }
 
+.submateri {
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0 0;
+}
+
+.submateri li {
+  border: none;
+  border-left: 2px solid #ccc;
+  border-radius: 0;
+  padding: 4px 0 4px 12px;
+  margin: 0 0 4px;
+}
+
+.submateri li a {
+  font-weight: normal;
+  font-size: .9rem;
+}
+
 /* Navigasi bagian */
 nav {
   display: flex;
