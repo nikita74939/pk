@@ -237,6 +237,37 @@
     Bagi dengan \(\sin^2 x\) menghasilkan \(1 + \cot^2 x = \csc^2 x\).
   </div>
 
+  <div class="contoh">
+    <h3>Contoh 1</h3>
+    <p>Diketahui \(\sin x = \tfrac{3}{5}\) dan \(x\) berada di kuadran II.
+    Nilai \(\cos x + \tan x\) adalah ...</p>
+    <ul class="opsi">
+      <li class="benar">A. \(-\tfrac{31}{20}\)</li>
+      <li>B. \(-\tfrac{17}{20}\)</li>
+      <li>C. \(\tfrac{31}{20}\)</li>
+      <li>D. \(-\tfrac{1}{20}\)</li>
+      <li>E. \(\tfrac{17}{20}\)</li>
+    </ul>
+    <div class="pembahasan">
+      Gunakan \(\sin^2 x + \cos^2 x = 1\):
+      \[
+        \cos^2 x = 1 - \left(\tfrac{3}{5}\right)^2 = 1 - \tfrac{9}{25} = \tfrac{16}{25}
+        \;\Rightarrow\; \cos x = \pm\tfrac{4}{5}
+      \]
+      Karena \(x\) di kuadran II, \(\cos x\) negatif, jadi \(\cos x = -\tfrac{4}{5}\).<br>
+      Dengan identitas perbandingan:
+      \[
+        \tan x = \frac{\sin x}{\cos x} = \frac{3/5}{-4/5} = -\tfrac{3}{4}
+      \]
+      Maka
+      \[
+        \cos x + \tan x = -\tfrac{4}{5} - \tfrac{3}{4}
+        = -\tfrac{16}{20} - \tfrac{15}{20} = -\tfrac{31}{20}
+      \]
+      <span class="final">Jawaban A</span>
+    </div>
+  </div>
+
 
 
   <h2>3. Identitas Sudut Negatif &amp; Relasi Sudut</h2>
@@ -336,6 +367,32 @@
     Untuk <b>tangen</b>: penyebut memakai tanda yang berlawanan dengan pembilang.
   </div>
 
+  <div class="contoh">
+    <h3>Contoh 2</h3>
+    <p>Nilai \(\sin 75^\circ\) adalah ...</p>
+    <ul class="opsi">
+      <li class="benar">A. \(\tfrac{1}{4}(\sqrt{6} + \sqrt{2})\)</li>
+      <li>B. \(\tfrac{1}{4}(\sqrt{6} - \sqrt{2})\)</li>
+      <li>C. \(\tfrac{1}{2}(\sqrt{6} + \sqrt{2})\)</li>
+      <li>D. \(\tfrac{1}{4}(\sqrt{3} + 1)\)</li>
+      <li>E. \(\tfrac{1}{2}(\sqrt{3} + 1)\)</li>
+    </ul>
+    <div class="pembahasan">
+      Pecah \(75^\circ = 45^\circ + 30^\circ\), lalu gunakan rumus jumlah sinus:
+      \[
+        \sin 75^\circ = \sin(45^\circ + 30^\circ)
+        = \sin 45^\circ\cos 30^\circ + \cos 45^\circ\sin 30^\circ
+      \]
+      \[
+        = \left(\tfrac{\sqrt{2}}{2}\right)\left(\tfrac{\sqrt{3}}{2}\right)
+        + \left(\tfrac{\sqrt{2}}{2}\right)\left(\tfrac{1}{2}\right)
+        = \tfrac{\sqrt{6}}{4} + \tfrac{\sqrt{2}}{4}
+        = \tfrac{1}{4}(\sqrt{6} + \sqrt{2})
+      \]
+      <span class="final">Jawaban A</span>
+    </div>
+  </div>
+
 
 
   <h2>5. Identitas Sudut Rangkap</h2>
@@ -368,6 +425,31 @@
     <span class="lbl">Pilih bentuk yang sesuai</span><br>
     Jika diketahui \(\sin A\), gunakan \(\cos 2A = 1 - 2\sin^2 A\).<br>
     Jika diketahui \(\cos A\), gunakan \(\cos 2A = 2\cos^2 A - 1\).
+  </div>
+
+  <div class="contoh">
+    <h3>Contoh 3</h3>
+    <p>Diketahui \(\sin A = \tfrac{3}{5}\) dengan \(A\) sudut lancip.
+    Nilai \(\sin 2A\) adalah ...</p>
+    <ul class="opsi">
+      <li class="benar">A. \(\tfrac{24}{25}\)</li>
+      <li>B. \(\tfrac{12}{25}\)</li>
+      <li>C. \(\tfrac{7}{25}\)</li>
+      <li>D. \(-\tfrac{24}{25}\)</li>
+      <li>E. \(\tfrac{25}{24}\)</li>
+    </ul>
+    <div class="pembahasan">
+      Karena \(A\) lancip, \(\cos A\) positif. Dari identitas Pythagoras:
+      \[
+        \cos A = \sqrt{1 - \sin^2 A} = \sqrt{1 - \tfrac{9}{25}} = \tfrac{4}{5}
+      \]
+      Gunakan rumus sudut rangkap:
+      \[
+        \sin 2A = 2\sin A\cos A
+        = 2 \cdot \tfrac{3}{5} \cdot \tfrac{4}{5} = \tfrac{24}{25}
+      \]
+      <span class="final">Jawaban A</span>
+    </div>
   </div>
 
 
@@ -433,6 +515,32 @@
     \]
   </div>
 
+  <div class="contoh">
+    <h3>Contoh 4</h3>
+    <p>Nilai \(\cos 75^\circ + \cos 15^\circ\) adalah ...</p>
+    <ul class="opsi">
+      <li class="benar">A. \(\tfrac{1}{2}\sqrt{6}\)</li>
+      <li>B. \(\tfrac{1}{2}\sqrt{2}\)</li>
+      <li>C. \(\tfrac{1}{2}\sqrt{3}\)</li>
+      <li>D. \(\sqrt{6}\)</li>
+      <li>E. \(\sqrt{2}\)</li>
+    </ul>
+    <div class="pembahasan">
+      Gunakan rumus jumlah ke perkalian:
+      \[
+        \cos A + \cos B = 2\cos\frac{A+B}{2}\cos\frac{A-B}{2}
+      \]
+      Dengan \(A = 75^\circ\) dan \(B = 15^\circ\):
+      \[
+        \cos 75^\circ + \cos 15^\circ
+        = 2\cos 45^\circ\cos 30^\circ
+        = 2 \cdot \tfrac{\sqrt{2}}{2} \cdot \tfrac{\sqrt{3}}{2}
+        = \tfrac{1}{2}\sqrt{6}
+      \]
+      <span class="final">Jawaban A</span>
+    </div>
+  </div>
+
 
 
   <h2>8. Identitas pada Segitiga &amp; Identitas Bersyarat</h2>
@@ -461,6 +569,32 @@
     \[
       A + B = 90^\circ \;\Rightarrow\; \sin^2 A + \sin^2 B = 1
     \]
+  </div>
+
+  <div class="contoh">
+    <h3>Contoh 5</h3>
+    <p>Jika \(A + B = 45^\circ\), buktikan bahwa \((1 + \tan A)(1 + \tan B) = 2\).</p>
+    <div class="pembahasan">
+      Dari \(A + B = 45^\circ\) dan \(\tan 45^\circ = 1\), gunakan rumus jumlah tangen:
+      \[
+        \tan(A + B) = \frac{\tan A + \tan B}{1 - \tan A\tan B} = 1
+      \]
+      Maka
+      \[
+        \tan A + \tan B = 1 - \tan A\tan B
+        \;\Rightarrow\; \tan A + \tan B + \tan A\tan B = 1
+      \]
+      Jumlahkan kedua ruas dengan \(1\):
+      \[
+        1 + \tan A + \tan B + \tan A\tan B = 2
+      \]
+      Ruas kiri dapat difaktorkan menjadi
+      \[
+        (1 + \tan A)(1 + \tan B) = 2
+      \]
+      Terbukti.
+      <span class="final">Terbukti</span>
+    </div>
   </div>
 
 
@@ -529,5 +663,18 @@
   </div>
 
 </div>
+<script>
+  document.querySelectorAll('.contoh').forEach(function (box) {
+    var btn = document.createElement('button');
+    btn.className = 'toggle';
+    btn.textContent = 'Lihat Jawaban';
+    btn.addEventListener('click', function () {
+      var open = box.classList.toggle('revealed');
+      btn.textContent = open ? 'Sembunyikan Jawaban' : 'Lihat Jawaban';
+    });
+    var pembahasan = box.querySelector('.pembahasan');
+    box.insertBefore(btn, pembahasan);
+  });
+</script>
 </body>
 </html>
